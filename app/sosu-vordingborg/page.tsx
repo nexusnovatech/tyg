@@ -1,23 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { MapPin, Phone, Mail, Clock, Users, Heart, Award, ArrowRight, CheckCircle2 } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import type { Metadata } from "next"
+import VordingborgClientPage from "./VordingborgClientPage"
 
-export default function SOSUVordingborgPage() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white">
-        <div className="absolute inset-0 bg-[url('/healthcare-professionals-caring.jpg')] bg-cover bg-center opacity-10" />
-        <div className="container relative mx-auto px-4 py-24 md:py-32">
-          <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-6 bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm">SOSU Vordingborg</Badge>
-            <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl text-balance">
-              Din karriere inden for sundhed og omsorg i Vordingborg
-            </h1>
-            <p className="mb-8 text-xl text-blue-100 md:text-2xl text-pretty">
+export const metadata: Metadata = {
+  title: "Vikarbureau SOSU Vordingborg | Erfarne SOSU-vikarer - Tryghedspersonale.dk",
+  description:
+    "Vikarbureau SOSU Vordingborg – Erfarne og kompetente SOSU-vikarer til plejehjem, hjemmepleje og bosteder i Vordingborg og omegn.",
+}
+
+export default function VordingborgPage() {
+  return <VordingborgClientPage />
               Bliv en del af et professionelt og engageret team, der gør en forskel for borgerne i Vordingborg Kommune
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import KoegeClientPage from "../koege-psykiatrisk-vikarbureau/KoegeClientPage"
+import VordingborgClientPage from "./VordingborgClientPage"
 
 export const metadata: Metadata = {
   title: "Vikarbureau SOSU Vordingborg – Tryghedspersonale.dk | Ring 41 44 33 33",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function VordingborgPage() {
-  return <KoegeClientPage />
+  return <VordingborgClientPage />
 }
