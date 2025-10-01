@@ -19,7 +19,6 @@ import {
 } from "lucide-react"
 import EnhancedHeroSlider from "@/components/enhanced-hero-slider"
 import { CityCarousel } from "@/components/CityCarousel"
-import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
 export default function HoengClientPage() {
@@ -81,8 +80,6 @@ export default function HoengClientPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Hero Section */}
       <section className="relative">
         <EnhancedHeroSlider slides={heroSlides} />
