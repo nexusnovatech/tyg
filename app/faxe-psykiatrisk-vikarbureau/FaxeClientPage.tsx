@@ -26,7 +26,7 @@ import {
 } from "lucide-react"
 import EnhancedHeroSlider from "@/components/enhanced-hero-slider"
 import { CityCarousel } from "@/components/CityCarousel"
-import Header from "@/components/Header"
+import Header from "@/components/header"
 import Footer from "@/components/Footer"
 
 export default function FaxeClientPage() {
@@ -108,7 +108,6 @@ export default function FaxeClientPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative">

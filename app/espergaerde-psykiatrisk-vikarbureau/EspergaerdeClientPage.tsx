@@ -21,8 +21,8 @@ import {
 } from "lucide-react"
 import EnhancedHeroSlider from "@/components/enhanced-hero-slider"
 import { CityCarousel } from "@/components/CityCarousel"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import Header from "@/components/header"
+import Footer from "@/components/header"
 
 export default function EspergaerdeClientPage() {
   const [activeService, setActiveService] = useState(0)
@@ -83,7 +83,6 @@ export default function EspergaerdeClientPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero Section */}
       <EnhancedHeroSlider slides={heroSlides} />
